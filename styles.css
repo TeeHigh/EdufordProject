@@ -8,6 +8,7 @@ html {
 }
 .header{
     min-height: 100vh;
+    padding: 0 0 2.5rem;
     width: 100%;
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://github.com/TeeHigh/EdufordProject/blob/main/banner.png?raw=true);
     background-position: center;
@@ -59,18 +60,15 @@ nav img{
 }
 .text-box{
     color: #fff;
-    transform: translate(0, 35%); 
     display: grid;
     place-items: center;
     text-align: center;
 }
-.text-box h1{
-    font-size: 5rem;
-}
+
 .text-box p{
     margin: 10px 0 40px;
     color: #fff;
-    font-size: 14px;
+    
 }
 .hero-btn{
     color: #f44336;
@@ -92,8 +90,29 @@ nav img{
 nav .fa{
     display: none;
 }
+@media(min-height: 700px){
+      .text-box{
+        transform: translate(0, 35%);
+      }
+    .text-box h1{
+        font-size: 4.7rem;
+      }
+    .text-box p{
+        font-size: 1.1rem;
+      }
+  }
+@media(max-height: 700px){
+    .text-box{
+      transform: translate(0, 3rem);
+    }
+  .text-box p{
+        font-size: .85rem;
+      }
+  }
 @media(max-width: 700px){
-
+    .text-box{
+        transform: translate(0, 35%); 
+    }
     .text-box h1{
         font-size: 2.5rem;
     }
