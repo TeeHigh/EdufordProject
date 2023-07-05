@@ -9,7 +9,7 @@ html {
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(banner.png);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://github.com/TeeHigh/EdufordProject/blob/main/banner.png?raw=true);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -17,13 +17,14 @@ html {
 
 nav{
     display: flex;
-    padding: 2% 6%;
+    padding: 2em 6% 2%;
     justify-content: space-between;
     align-items: center;
 }
 
 nav img{
     width: 150px;
+    
 }
 
 .nav-links{
@@ -57,18 +58,14 @@ nav img{
     width: 100%;
 }
 .text-box{
-    width: 90%;
     color: #fff;
-/*     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
+    transform: translate(0, 35%); 
     display: grid;
     place-items: center;
     text-align: center;
 }
 .text-box h1{
-    font-size: 6rem;
+    font-size: 5rem;
 }
 .text-box p{
     margin: 10px 0 40px;
@@ -98,7 +95,7 @@ nav .fa{
 @media(max-width: 700px){
 
     .text-box h1{
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     .nav-links ul li{
         display:  block;
@@ -118,7 +115,7 @@ nav .fa{
         display: block;
         color: #fff;
         margin: 10px;
-        font-size: 22px;
+        font-size: 2em;
         cursor: pointer;
         
     }
